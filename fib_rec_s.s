@@ -1,6 +1,6 @@
 main:
 
-	mov r0, #12
+	mov r0, #19
 	mov sp, #128
 	add sp, sp, sp
 	add sp, sp, sp

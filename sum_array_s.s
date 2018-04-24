@@ -31,6 +31,7 @@ main:
 	mov r1, #5
 
 	bl sum_array_s
+	add sp, sp #20
 
 halt:
 	b halt
@@ -49,5 +50,6 @@ loop:
 	b loop
 
 loop_end:
+	add sp, sp, #20
 	mov r0, r2
 	bx lr

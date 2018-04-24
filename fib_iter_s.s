@@ -1,6 +1,10 @@
 main:
+	
+	mov sp, #128
+	add sp, sp, sp /* 256 */
+	add sp, sp, sp /* 512 */
+	add sp, sp, sp /* 1024 */
 	mov r0, #12
-	mov sp, #200
 	bl fib_iter_s
 end:
 	b end
